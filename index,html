@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Existem galinhas e"galinhas".</title>
+    
+        <style>
+            
+           .galinha{ 
+            color:orange;
+            
+           } 
+            .comida{
+             color:brown;   
+                
+                
+                
+            }
+            h1{
+             text-align:center;   
+                
+                
+                
+            }
+            button{
+             
+            top: 250px;
+            left: 300px;
+            background-color: yellow;
+            color: red;
+            font-size: 1em;
+            width: 250px;
+            border-radius: 20px;
+            border: 5px solid orange;
+            padding: 20px;
+                
+            }
+            img:hover{
+               width:300px; 
+               transition:1s linear; 
+                
+            }
+            
+        </style>
+        
+        
+        
+        
+    </head>
+    <body>
+<button id ="maluco">galinhas malucas</button>
+<button id ="imagens">imagens malucas</button>
+<h1>Galinhas</h1>
+<p> <span class ="galinha">Galinha (nome científico: <em>Gallus gallus domesticus</em>) </span>são respectivamente, a fêmea da subespécie doméstica da espécie Gallus gallus (galo-banquiva). São aves da família dos fasianídeos e da ordem dos galiformes. Quando nascem, são chamados de <span class="galinha">"pintinhos"</span> (sem distinção de sexo), na fase juvenil são chamados de <span class="galinha">"frangos" ou "frangas"</span>. A espécie tem uma enorme importância para o ser humano, sendo o animal doméstico mais difundido e abundante do planeta e uma das fontes de proteína mais baratas. Além de sua <span class = "comida">carne, fornecem ovos</span>. As penas também têm utilizações industriais. Segundo dados de 2003, havia cerca de <strong>24 bilhões de galinhas no mundo</strong>. Em alguns países da África moderna, <strong>90%</strong> dos lares criam galinhas. <span class="galinha">As galinhas</span> são aves omnívoras, tendo preferência por <span class = "comida">sementes e pequenos invertebrados</span>. 
+    
+</p>
+   <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/birds_rainbow-lorakeets.png" width="200px"/>
+    <p>Imagem de uma galinha falsa.</p>
+    <p><span class="galinha">As galinhas </span>são uma importante <span class="comida">fonte de alimento há séculos</span>. As primeiras referências a<span class="galinha"> galinhas domesticadas</span> surgem em cerâmicas coríntias datadas do século VII a.C. A introdução desta ave como animal doméstico surgiu provavelmente na Ásia, de onde é nativo o galo-banquiva (Gallus gallus). Os humanos iniciaram a domesticação de galinhas de origem indiana com a finalidade utilizá-las em briga de galos na Ásia, África e Europa, sendo dada pouca atenção à produção de <span class="comida">carne ou ovos</span>. Recentes estudos genéticos apontam para múltiplas origens maternas no sudeste, leste e sul da Ásia, sendo com o clado encontrado nas Américas, Europa, Oriente Médio e África originário do subcontinente indiano.</p>
+    <p><a href="https://pt.wikipedia.org/wiki/Galinha">    leia mais na WIKI</a></p>    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+          
+       <script>
+          var $Body=$("body") 
+          $("#maluco").on("click",function(){
+              
+              $Body.hide(2000)
+           $Body.show(5000)
+              
+          })
+          var $img=$("img")
+          $("#imagens").on("click",function(){
+              $img.toggle(1000);
+              
+              
+              
+          }) 
+           
+      
+      
+      
+       </script>   
+          
+          
+      
+    </body>
+</html>
