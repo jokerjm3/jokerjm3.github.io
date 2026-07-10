@@ -4,7 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circulo estranho</title>
-</head>
+ <style>
+      @keyframes maluco{
+        0%{
+        fill:rgb(19, 52, 240);    
+        transform:scale(0.2);   
+        }  
+        50%{
+        fill:rgb(166, 5, 8);    
+        transform:scale(1.8);     
+        }  
+      100%{
+        fill:rgb(5, 115, 12);    
+        transform:scale(1);   
+      }
+          
+      }  
+      
+      #circulo{
+        animation:maluco 1500ms linear infinite alternate;  
+          
+      }  
+        
+    </style>
+  </head>
 <body>
   <svg width="1000" height="600" viewBox="0 -150 400 400" style="background: #ffffff;">
    <circle cx="100" cy="100" r="10" fill="#2212cd" stroke-weight="100" stroke="#c80909">
@@ -17,6 +40,6 @@
       repeatCount='indefinite' /></circle> 
   
 </svg>
-
+<svg viewbox="0,0,500,500"> <circle id="circulo" cx="100" cy="100" r="50" /></svg>
 </body>
 </html>
